@@ -1,0 +1,97 @@
+import { SectionHeader } from './SectionHeader';
+import { Divider } from './Divider';
+import { motion } from 'motion/react';
+import { Heart, Sparkles, Users } from 'lucide-react';
+
+export function AboutSection() {
+  return (
+    <section className="py-20 bg-gradient-to-b from-white to-[#fdf8f3] relative overflow-hidden">
+      {/* Decorative pattern */}
+      <div className="absolute inset-0 pattern-diagonal opacity-30" />
+      
+      <div className="container mx-auto px-4 relative z-10">
+        <SectionHeader 
+          title="Our Story" 
+          subtitle="Where passion meets flavour"
+        />
+
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8 }}
+          className="max-w-4xl mx-auto"
+        >
+          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl border-4 border-[#f5e6d3] relative">
+            {/* Decorative corner elements */}
+            <div className="absolute top-4 left-4 w-8 h-8 border-t-4 border-l-4 border-[#ff8c42] rounded-tl-2xl" />
+            <div className="absolute top-4 right-4 w-8 h-8 border-t-4 border-r-4 border-[#2d9cca] rounded-tr-2xl" />
+            <div className="absolute bottom-4 left-4 w-8 h-8 border-b-4 border-l-4 border-[#2d9cca] rounded-bl-2xl" />
+            <div className="absolute bottom-4 right-4 w-8 h-8 border-b-4 border-r-4 border-[#ff8c42] rounded-br-2xl" />
+            
+            <p className="text-xl leading-relaxed text-[#2d2d2d] mb-6">
+              <span className="font-script text-3xl text-[#ff8c42]">Truckin&apos; Taste</span> brings together the comfort of desi street food with a global twist. Created by a passionate team of culinary students, our food truck brings colour, creativity and unforgettable flavours to every event.
+            </p>
+            <p className="text-xl leading-relaxed text-[#2d2d2d]">
+              Join us at <span className="text-[#2d9cca]">Epicuria&apos;25</span> for three days of great food, great energy and great company.
+            </p>
+          </div>
+        </motion.div>
+
+        {/* Feature highlights */}
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="grid md:grid-cols-3 gap-8 mt-16 max-w-5xl mx-auto"
+        >
+          {[
+            {
+              icon: Heart,
+              title: 'Made with Love',
+              description: 'Every dish crafted with passion and care',
+              color: '#ff6b6b'
+            },
+            {
+              icon: Sparkles,
+              title: 'Creative Fusion',
+              description: 'Desi flavours meet global inspirations',
+              color: '#ff8c42'
+            },
+            {
+              icon: Users,
+              title: 'Student-Led',
+              description: 'By culinary enthusiasts, for food lovers',
+              color: '#2d9cca'
+            }
+          ].map((feature, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 + 0.3 }}
+              whileHover={{ scale: 1.05, y: -5 }}
+              className="text-center p-6 bg-white rounded-2xl shadow-lg"
+            >
+              <div 
+                className="w-16 h-16 mx-auto mb-4 rounded-full flex items-center justify-center"
+                style={{ backgroundColor: `${feature.color}20` }}
+              >
+                <feature.icon 
+                  className="w-8 h-8"
+                  style={{ color: feature.color }}
+                />
+              </div>
+              <h3 className="text-xl mb-2 text-[#2d2d2d]">{feature.title}</h3>
+              <p className="text-[#717182]">{feature.description}</p>
+            </motion.div>
+          ))}
+        </motion.div>
+
+        <Divider />
+      </div>
+    </section>
+  );
+}
