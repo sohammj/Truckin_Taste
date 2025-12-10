@@ -53,7 +53,7 @@ export function ContactSection() {
                 <p className="text-[#717182] mb-4">
                   Quick enquiries and orders made easy
                 </p>
-                <p className="text-xl text-[#2d9cca] mb-4">+91 XXXXX XXXXX</p>
+                <p className="text-xl text-[#2d9cca] mb-4">+91 98201 69543</p>
                 <Button variant="secondary" size="md" className="w-full">
                   <MessageCircle className="w-5 h-5" />
                   Chat on WhatsApp

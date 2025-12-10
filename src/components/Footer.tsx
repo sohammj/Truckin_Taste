@@ -78,7 +78,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Instagram className="w-5 h-5 text-[#ff8c42]" />
-                <a href="#" className="text-[#a0a0a0] hover:text-[#ff8c42] transition-colors">
+                <a href="https://www.instagram.com/truckin_taste" className="text-[#a0a0a0] hover:text-[#ff8c42] transition-colors">
                   @truckin_taste
                 </a>
               </div>
