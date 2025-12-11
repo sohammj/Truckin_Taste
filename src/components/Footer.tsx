@@ -38,18 +38,13 @@ export function Footer() {
             <h4 className="text-xl mb-4 text-white">Quick Links</h4>
             <ul className="space-y-2">
               <li>
-                <a href="#menu" className="text-[#a0a0a0] hover:text-[#ff8c42] transition-colors">
-                  View Menu
+                <a href="#" className="text-[#a0a0a0] hover:text-[#ff8c42] transition-colors">
+                  About Us
                 </a>
               </li>
               <li>
                 <a href="#event" className="text-[#a0a0a0] hover:text-[#ff8c42] transition-colors">
                   Event Details
-                </a>
-              </li>
-              <li>
-                <a href="#" className="text-[#a0a0a0] hover:text-[#ff8c42] transition-colors">
-                  About Us
                 </a>
               </li>
               <li>
@@ -101,7 +96,7 @@ export function Footer() {
               viewport={{ once: true }}
               className="text-[#a0a0a0] text-sm text-center md:text-left"
             >
-              © 2024 Truckin&apos; Taste. Made with <span className="text-[#ff6b6b]">❤️</span> by culinary students.
+              © 2025 Truckin&apos; Taste.
             </motion.p>
             <motion.p
               initial={{ opacity: 0 }}

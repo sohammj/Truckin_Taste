@@ -37,10 +37,16 @@ export function ContactSection() {
                   Stay updated with our daily specials and behind-the-scenes content
                 </p>
                 <p className="text-xl text-[#ff8c42] mb-4">@truckin_taste</p>
-                <Button variant="primary" size="md" className="w-full">
-                  <Instagram className="w-5 h-5" />
-                  Follow on Instagram
-                </Button>
+                <a 
+                  href="https://instagram.com/truckin_taste" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="primary" size="md" className="w-full">
+                    <Instagram className="w-5 h-5" />
+                    Follow on Instagram
+                  </Button>
+                </a>
               </motion.div>
 
               {/* WhatsApp */}
@@ -54,10 +60,17 @@ export function ContactSection() {
                   Quick enquiries and orders made easy
                 </p>
                 <p className="text-xl text-[#2d9cca] mb-4">+91 98201 69543</p>
-                <Button variant="secondary" size="md" className="w-full">
-                  <MessageCircle className="w-5 h-5" />
-                  Chat on WhatsApp
-                </Button>
+
+                <a 
+                  href="https://wa.me/919820169543" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <Button variant="secondary" size="md" className="w-full">
+                    <MessageCircle className="w-5 h-5" />
+                    Chat on WhatsApp
+                  </Button>
+                </a>
               </motion.div>
             </div>
 
@@ -72,10 +85,17 @@ export function ContactSection() {
                 For collaborations, catering enquiries, and more
               </p>
               <p className="text-xl text-[#2d2d2d] mb-4">truckintaste@gmail.com</p>
-              <Button variant="outline" size="md">
-                <Send className="w-5 h-5" />
-                Send an Email
-              </Button>
+
+              <a 
+                href="mailto:truckintaste@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" size="md">
+                  <Send className="w-5 h-5" />
+                  Send an Email
+                </Button>
+              </a>
             </motion.div>
           </div>
         </motion.div>

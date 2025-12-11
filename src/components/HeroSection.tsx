@@ -137,9 +137,7 @@ export function HeroSection() {
               transition={{ delay: 0.7 }}
               className="flex flex-wrap gap-4"
             >
-              <Button variant="primary" size="lg" href="#menu">
-                View Menu
-              </Button>
+              
               <Button variant="secondary" size="lg" href="#event">
                 <MapPin className="w-5 h-5" />
                 Find Us at the Festival

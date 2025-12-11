@@ -5,6 +5,7 @@ import { TeamSection } from './components/TeamSection';
 import { EventSection } from './components/EventSection';
 import { GallerySection } from './components/GallerySection';
 import { ContactSection } from './components/ContactSection';
+import { SovraTechSection } from './components/SovraTechSection';
 import { Footer } from './components/Footer';
 import { motion, useScroll, useTransform } from 'motion/react';
 import { useEffect, useState } from 'react';
@@ -61,6 +62,7 @@ export default function App() {
       <TeamSection />
       <EventSection />
       <ContactSection />
+      <SovraTechSection />
       <Footer />
 
       {/* Scroll to top button */}

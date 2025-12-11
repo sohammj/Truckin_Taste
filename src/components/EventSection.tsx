@@ -21,7 +21,7 @@ export function EventSection() {
     {
       icon: Clock,
       title: 'Timing',
-      value: 'All Day Festival Hours',
+      value: '5:30 pm onwards',
       color: '#ff6b6b'
     }
   ];
@@ -85,10 +85,17 @@ export function EventSection() {
                 <div className="text-center p-8">
                   <MapPin className="w-16 h-16 text-[#ff8c42] mx-auto mb-4" />
                   <p className="text-[#2d2d2d] mb-4">Interactive Map</p>
-                  <Button variant="secondary" size="sm">
-                    <Navigation className="w-4 h-4" />
-                    Get Directions
-                  </Button>
+
+                  <a 
+                    href="https://www.google.com/maps/place/Sheila+Raheja+Institute+of+Hotel+Management/@19.0590906,72.8417935,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c918a05712a1:0xe9d32d337485fbf7!8m2!3d19.0590906!4d72.8443684!16s%2Fg%2F11clmsbdpb?entry=ttu"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button variant="secondary" size="sm">
+                      <Navigation className="w-4 h-4" />
+                      Get Directions
+                    </Button>
+                  </a>
                 </div>
               </div>
 
@@ -97,7 +104,7 @@ export function EventSection() {
                 <h3 className="text-2xl text-[#2d2d2d] mb-4">Location</h3>
                 <p className="text-lg text-[#717182] mb-6 leading-relaxed">
                   Sheila Raheja Institute of Hotel Management<br />
-                  <span className="text-[#2d2d2d]">Opp. Colgate Ground, Kherwadi</span><br />
+                  <span className="text-lg text-[#717182] mb-6 leading-relaxed">Opp. Colgate Ground, Kherwadi</span><br />
                   Bandra East, Mumbai<br />
                   Maharashtra 400051
                 </p>
@@ -108,10 +115,17 @@ export function EventSection() {
                   </p>
                 </div>
 
-                <Button variant="primary" size="lg" className="w-full">
-                  <Navigation className="w-5 h-5" />
-                  Open in Maps
-                </Button>
+                <a 
+                  href="https://www.google.com/maps/place/Sheila+Raheja+Institute+of+Hotel+Management/@19.0590906,72.8417935,17z/data=!3m1!4b1!4m6!3m5!1s0x3be7c918a05712a1:0xe9d32d337485fbf7!8m2!3d19.0590906!4d72.8443684!16s%2Fg%2F11clmsbdpb?entry=ttu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full block"
+                >
+                  <Button variant="primary" size="lg" className="w-full">
+                    <Navigation className="w-5 h-5" />
+                    Open in Maps
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
