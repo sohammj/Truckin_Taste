@@ -23,17 +23,20 @@ export function AboutSection() {
           className="max-w-4xl mx-auto"
         >
           <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl border-4 border-[#f5e6d3] relative">
+            
             {/* Decorative corner elements */}
             <div className="absolute top-4 left-4 w-8 h-8 border-t-4 border-l-4 border-[#ff8c42] rounded-tl-2xl" />
             <div className="absolute top-4 right-4 w-8 h-8 border-t-4 border-r-4 border-[#2d9cca] rounded-tr-2xl" />
             <div className="absolute bottom-4 left-4 w-8 h-8 border-b-4 border-l-4 border-[#2d9cca] rounded-bl-2xl" />
             <div className="absolute bottom-4 right-4 w-8 h-8 border-b-4 border-r-4 border-[#ff8c42] rounded-br-2xl" />
             
+            {/* NEW STORY TEXT */}
             <p className="text-xl leading-relaxed text-[#2d2d2d] mb-6">
-              <span className="font-script text-3xl text-[#ff8c42]">Truckin&apos; Taste</span> brings together the comfort of desi street food with a global twist. Created by a passionate team of culinary students, our food truck brings colour, creativity and unforgettable flavours to every event.
+              <span className="font-script text-3xl text-[#ff8c42]">Truckin&apos; Taste</span> is a vibrant multicuisine stall bringing bold flavours, fun vibes, and a whole lot of food love to Epicuria 2025. From comfort classics to creative fusion bites, we serve dishes that are quick, delicious, and made to impress every palate.
             </p>
+
             <p className="text-xl leading-relaxed text-[#2d2d2d]">
-              Join us at <span className="text-[#2d9cca]">Epicuria&apos;25</span> for three days of great food, great energy and great company.
+              With our energetic team and passion for good food, Truckin&apos; Taste promises a taste trail you’ll want to keep coming back to!
             </p>
           </div>
         </motion.div>
@@ -56,13 +59,13 @@ export function AboutSection() {
             {
               icon: Sparkles,
               title: 'Creative Fusion',
-              description: 'Desi flavours meet global inspirations',
+              description: 'Bold flavours meet global inspirations',
               color: '#ff8c42'
             },
             {
               icon: Users,
-              title: 'Student-Led',
-              description: 'By culinary enthusiasts, for food lovers',
+              title: 'Team-Powered',
+              description: 'Energetic crew serving great food vibes',
               color: '#2d9cca'
             }
           ].map((feature, index) => (
